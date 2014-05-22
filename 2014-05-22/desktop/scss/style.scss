@@ -1,12 +1,140 @@
 body {
 	margin: 0;
 }
+img{
+	display: block;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
 #qzad {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 480px;
 	min-width: 720px;
 	max-width: 1100px;
 	overflow: hidden;
-	background-color: white;
+	background-color: black;
+	background: black url(../images/bg-circles.jpg) top right no-repeat;
+	#left{
+		position: absolute;
+		width: 50%;
+		top:0;
+		left:0;
+		bottom:0;
+		overflow: hidden;
+		
+	}
+	.intro{
+		position: relative;
+		width: 83.4545454545%;
+		margin: 202px auto 0;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.image-holder{
+		position: absolute;
+		top:0;
+		img{
+			display: block;	
+			position: absolute;
+			top:0;
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			transition: all 1s ease;
+			opacity: 1;
+			&.fadeOut {
+			  -webkit-animation-name: fadeOut;
+			  		animation-name: fadeOut;
+			   -webkit-animation-duration: 3s;
+				  animation-duration: 3s;
+				  opacity: 0;
+				  
+			}
+		}
+		
+		
+		
+	}
+	#right{
+		position: absolute;
+		
+		top:0;
+		bottom:0;
+		left:50%;
+		//right: 0;
+		min-width: 406px;
+		.cta{
+			display: block;
+			position: absolute;
+			left:9.27272727273%;
+			top:204px;
+			width: 76%;
+			
+			img{
+
+				width: 100%;
+			}
+		}
+		div{
+			position: absolute;
+			top:0;
+			left:9.27272727273%;
+
+			&.head{
+				width:65.4545454545%;
+				top:66px;
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+			&.partner{
+				top:406px;
+				left: 49%;
+				//right: 9%;
+				width: 41.6363636364%;
+				//min-width: 207px;
+			}
+			&.contact{
+				top:406px;
+				width:17.0909090909%;
+				a{
+					display: inline-block;
+					&.twitter{
+						width:31.914893617%;
+						margin-right: 21%;
+					}
+					&.email{
+						width:40.4255319149%
+					}
+					img{
+						display: block;
+					}
+				}	
+			}
+		}
+	}
 }
