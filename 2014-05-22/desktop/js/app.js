@@ -8,12 +8,11 @@ var App = function() {
 		that.startAd();
 	}
 	this.off = function() {
-
+		
 	}
 	this.startAd = function(){
 		$(imgs).each(function(index, img) {
 			imgsArr[index]=img;
-			// that.cycleImages(index);
 		});
 
 		setTimeout(function(){
@@ -22,23 +21,17 @@ var App = function() {
 				num++
 			};
 		}, 2000);
-		// if(i = 0){
-		// 	$(imgsArr[0]).removeClass('fadeOut');
-		// }
-		
 	}
 	this.cycleImages = function(i) {
 		setTimeout(function() {
 			
 			if(i != 0 ){ 
-				$(imgsArr[i]).addClass('fadeOut');
-				//$(imgsArr[2]).removeClass('fadeOut') 
+				$(imgsArr[i]).toggleClass('fadeOut');
+				//$(imgsArr[i]).removeClass('fadeOut');
 			}else{
-				
+				//$(imgsArr[0]).toggleClass('fadeOut')
 			}
 		}, 2500 * num);
-
-
 	}
 
 };
