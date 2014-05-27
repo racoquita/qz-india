@@ -22,9 +22,6 @@ var App = function() {
 				num++
 			};
 		}, 2000);
-		// if(i = 0){
-		// 	$(imgsArr[0]).removeClass('fadeOut');
-		// }
 		
 	}
 	this.cycleImages = function(i) {
@@ -32,7 +29,7 @@ var App = function() {
 			
 			if(i != 0 ){ 
 				$(imgsArr[i]).addClass('fadeOut');
-				//$(imgsArr[2]).removeClass('fadeOut') 
+				
 			}else{
 				
 			}

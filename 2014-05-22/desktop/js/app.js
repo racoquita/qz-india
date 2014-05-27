@@ -27,9 +27,9 @@ var App = function() {
 			
 			if(i != 0 ){ 
 				$(imgsArr[i]).toggleClass('fadeOut');
-				//$(imgsArr[i]).removeClass('fadeOut');
+				
 			}else{
-				//$(imgsArr[0]).toggleClass('fadeOut')
+			
 			}
 		}, 2500 * num);
 	}

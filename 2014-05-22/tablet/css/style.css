@@ -14,7 +14,7 @@ img { display: block; }
 #qzad .intro img { display: block; width: 100%; }
 #qzad .image-holder { position: absolute; top: 0; }
 #qzad .image-holder img { display: block; position: absolute; top: 0; width: 480px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; opacity: 1; }
-#qzad .image-holder img.fadeOut { -webkit-animation-name: fadeOut; animation-name: fadeOut; -webkit-animation-duration: 3s; animation-duration: 3s; opacity: 0; }
+#qzad .image-holder img.fadeOut { -webkit-animation-name: fadeOut; animation-name: fadeOut; -webkit-animation-duration: 3s; animation-duration: 3s; -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease; -moz-animation-timing-function: ease; animation-timing-function: ease; opacity: 0; }
 #qzad #bottom { position: absolute; bottom: 0; top: 275px; left: 0; right: 0; height: 275px; background: black url(../images/bg-circles.jpg) top right no-repeat; background-size: 224px; }
 #qzad #bottom .cta { display: block; position: absolute; left: 25px; top: 105px; width: 352px; }
 #qzad #bottom .cta img { width: 100%; }

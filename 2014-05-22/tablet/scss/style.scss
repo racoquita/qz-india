@@ -64,9 +64,15 @@ img{
 			opacity: 1;
 			&.fadeOut {
 			  -webkit-animation-name: fadeOut;
-			  		animation-name: fadeOut;
+			  	animation-name: fadeOut;
 			   -webkit-animation-duration: 3s;
-				  animation-duration: 3s;
+				animation-duration: 3s;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count:infinite;
+				animation-iteration-count:infinite;
+				-webkit-animation-timing-function: ease;
+				-moz-animation-timing-function: ease;
+				animation-timing-function: ease;
 				  opacity: 0;
 				  
 			}
