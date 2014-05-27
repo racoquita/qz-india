@@ -25,12 +25,12 @@ var App = function() {
 	this.cycleImages = function(i) {
 		setTimeout(function() {
 			
-			if(i != 0 ){ 
+			//if(i != 0 ){ 
 				$(imgsArr[i]).toggleClass('fadeOut');
 				
-			}else{
+			//}else{
 			
-			}
+			//}
 		}, 2500 * num);
 	}
 
