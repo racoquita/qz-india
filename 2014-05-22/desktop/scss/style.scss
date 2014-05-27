@@ -78,15 +78,14 @@ img{
 				  
 			}
 		}
-		
-		
-		
 	}
 	#right{
 		position: absolute;
 		
 		top:0;
 		bottom:0;
+		right: 0;
+		width: 50%;
 		left:50%;
 		//right: 0;
 		min-width: 406px;
@@ -105,25 +104,27 @@ img{
 		div{
 			position: absolute;
 			top:0;
-			left:9.27272727273%;
-
 			&.head{
 				width:65.4545454545%;
 				top:66px;
+				left:9.27272727273%;
 			}
 			img{
 				display: block;
 				width: 100%;
 			}
 			&.partner{
-				top:406px;
-				left: 49%;
-				//right: 9%;
+				top:384px;
+				right: 4.27272727273%;
 				width: 41.6363636364%;
+				img{
+					width: 100%;
+				}
 				//min-width: 207px;
 			}
 			&.contact{
 				top:406px;
+				left:9.27272727273%;
 				width:17.0909090909%;
 				a{
 					display: inline-block;

@@ -15,14 +15,15 @@ img { display: block; }
 #qzad .image-holder { position: absolute; top: 0; width: 100%; height: 100%; }
 #qzad .image-holder img { display: block; position: absolute; top: 0; height: 100%; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; opacity: 1; }
 #qzad .image-holder img.fadeOut { -webkit-animation-name: fadeOut; animation-name: fadeOut; -webkit-animation-duration: 3s; animation-duration: 3s; opacity: 0; }
-#qzad #right { position: absolute; top: 0; bottom: 0; left: 50%; min-width: 406px; }
+#qzad #right { position: absolute; top: 0; bottom: 0; right: 0; width: 50%; left: 50%; min-width: 406px; }
 #qzad #right .cta { display: block; position: absolute; left: 9.27272727273%; top: 204px; width: 76%; }
 #qzad #right .cta img { width: 100%; }
-#qzad #right div { position: absolute; top: 0; left: 9.27272727273%; }
-#qzad #right div.head { width: 65.4545454545%; top: 66px; }
+#qzad #right div { position: absolute; top: 0; }
+#qzad #right div.head { width: 65.4545454545%; top: 66px; left: 9.27272727273%; }
 #qzad #right div img { display: block; width: 100%; }
-#qzad #right div.partner { top: 406px; left: 49%; width: 41.6363636364%; }
-#qzad #right div.contact { top: 406px; width: 17.0909090909%; }
+#qzad #right div.partner { top: 384px; right: 4.27272727273%; width: 41.6363636364%; }
+#qzad #right div.partner img { width: 100%; }
+#qzad #right div.contact { top: 406px; left: 9.27272727273%; width: 17.0909090909%; }
 #qzad #right div.contact a { display: inline-block; }
 #qzad #right div.contact a.twitter { width: 31.914893617%; margin-right: 21%; }
 #qzad #right div.contact a.email { width: 40.42553%; }
