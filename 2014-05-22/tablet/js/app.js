@@ -4,38 +4,50 @@ var App = function() {
 	var imgsArr = [];
 	var num = 0;
 	var i;
+	var pfx = ["-webkit", "-moz", "MS", "o", ""];
+	var prefixedEventListener = function(element, type, callback) {
+	    for (var p = 0; p < pfx.length; p++) {
+	        if (!pfx[p]) type = type.toLowerCase();
+	        element.addEventListener(pfx[p]+type, callback, false);
+	    }
+	}
 	this.on = function() {
 		that.startAd();
 	}
 	this.off = function() {
-
+		
 	}
 	this.startAd = function(){
 		$(imgs).each(function(index, img) {
 			imgsArr[index]=img;
-			// that.cycleImages(index);
+			
 		});
 
+		that.cycleImages();
+	}
+	this.cycleImages = function() {
+		console.log('cycle');
+
+		for(var i = 1; i < imgsArr.length; i++) {
+			that.fadeImage(i, $(imgsArr[i]));
+		}
+
 		setTimeout(function(){
-			for (var j = imgsArr.length - 1; j >= 0; j--) {			
-				that.cycleImages(j);
-				num++
-			};
-		}, 2000);
-		
+			that.resetImages();
+		}, 3100 * (imgsArr.length));
 	}
-	this.cycleImages = function(i) {
-		setTimeout(function() {
-			
-			if(i != 0 ){ 
-				$(imgsArr[i]).addClass('fadeOut');
-				
-			}else{
-				
-			}
-		}, 2500 * num);
-
-
+	this.fadeImage = function(i, img) {
+		setTimeout(function(){
+			img.addClass('fadeOut');
+		}, 1000 * i);
 	}
+	this.resetImages = function(){
+		$('#slider img').removeClass('fadeOut');
+
+		setTimeout(function(){
+			that.cycleImages();
+		}, 3000);
+	}
+
 
 };

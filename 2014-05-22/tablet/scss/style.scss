@@ -56,20 +56,18 @@ img{
 			position: absolute;
 			top:0;
 			width: 480px;
-			-webkit-transition: all 1s ease;
-			-moz-transition: all 1s ease;
-			-ms-transition: all 1s ease;
-			-o-transition: all 1s ease;
-			transition: all 1s ease;
+			-webkit-transition: all 3s ease;
+			-moz-transition: all 3s ease;
+			-ms-transition: all 3s ease;
+			-o-transition: all 3s ease;
+			transition: all 3s ease;
 			opacity: 1;
 			&.fadeOut {
 			  -webkit-animation-name: fadeOut;
 			  	animation-name: fadeOut;
 			   -webkit-animation-duration: 3s;
 				animation-duration: 3s;
-				-webkit-animation-iteration-count: infinite;
-				-moz-animation-iteration-count:infinite;
-				animation-iteration-count:infinite;
+				
 				-webkit-animation-timing-function: ease;
 				-moz-animation-timing-function: ease;
 				animation-timing-function: ease;
