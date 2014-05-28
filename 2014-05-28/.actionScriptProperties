@@ -13,9 +13,7 @@
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
-  <applications>
-    <application path="qz_india_300_25.mxml"/>
-  </applications>
+  <applications/>
   <modules/>
   <workers/>
   <buildCSSFiles/>
